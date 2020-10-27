@@ -1,0 +1,269 @@
+html {
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #ffc900;
+	z-index: -100;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+img {
+	display: block;
+	position: absolute;
+	height: auto;
+}
+.circle {
+  width:264px;
+  height:264px;
+  border-radius: 50%;
+  position: absolute;
+}
+.solid {
+	border: 0.75px solid black;
+	opacity: 50%;
+}
+.small1 {
+	font-weight: 600;
+	font-size: 0.65rem;
+	position: absolute;
+	word-spacing: 1.1px;
+	letter-spacing: 0.08px;
+}
+.small2 {
+	font-weight: 600;
+	font-size: 0.68rem;
+	position: absolute;
+	word-spacing: 0.6px;
+	letter-spacing: 0.08px;
+}
+.medium1 {
+	font-weight: 500;
+	font-size: 1.6rem;
+	position: absolute;
+	line-height: 1.18;
+	word-spacing: 0.2rem;
+	letter-spacing: 0.08rem;
+}
+.medium2 {
+	font-weight: 500;
+	font-size: 4rem;
+	position: absolute;
+	line-height: 1.18;
+	word-spacing: -0.2rem;
+	letter-spacing: -0.1rem;
+}
+.trapezoid {
+	border-bottom: 158px solid transparent;
+	border-left: 46px solid transparent;
+	border-right: 46px solid transparent;
+	height: 0;
+	width: 125px;
+	position: absolute;
+	transition: all 1s ease-in-out;
+}
+
+@-webkit-keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(40deg);
+	}
+
+	100% {
+		transform: rotate(-40deg);
+	}
+}
+.rotate {
+	animation-name: rotate;
+	animation-duration: 5.5s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scale {
+	0% {
+		transform: rotate(0deg) scale(0.6,0.6);
+	}
+
+	100% {
+		transform: rotate(360deg) scale(1,1);
+	}
+}
+.scale {
+	animation-name: scale;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce_frames {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 20%, 0);
+  }
+}
+.bounce {
+  animation: bounce_frames 0.8s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {
+    	opacity:0.4;
+    }
+
+    100% {
+    	opacity:1;
+    }
+}
+
+.circle {
+	background-color: #ffffff;
+	opacity: 88%;
+	width: 11.5%;
+	height: 11.5%;
+	border-radius:50%;
+	left: 68.6%;
+	top: 72.7%;
+	position: absolute;
+	filter: blur(20px);
+}
+.circle2 {
+	background-color: #ffffff;
+	opacity: 88%;
+	width: 10.5%;
+	height: 17%;
+	border-radius:50%;
+	left: 52.3%;
+	top: 37.3%;
+	position: absolute;
+	filter: blur(20px);
+}
+.blinking {
+    animation:blink 1.8s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes rotate2 {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateY(180deg);
+	}
+}
+.rotate2 {
+	animation-name: rotate2;
+	animation-duration: 2.5s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotate3 {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	50% {
+		transform: rotateZ(14deg);
+	}
+	100% {
+		transform: rotateZ(-14deg);
+	}
+}
+.rotate3 {
+	animation-name: rotate3;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotate4 {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(-15deg);
+	}
+}
+.rotate4 {
+	animation-name: rotate4;
+	animation-duration: 1.8s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotate5 {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(15deg);
+	}
+}
+.rotate5 {
+	animation-name: rotate5;
+	animation-duration: 1.8s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blink2 {
+    0% {
+    	opacity:0.2;
+    }
+
+    100% {
+    	opacity:1;
+    }
+}
+.blinking2 {
+    animation: blink2 1.8s ease-in-out infinite alternate;
+
+}
+.oval1 {
+	position: absolute;
+	width: 4.2%;
+	height: 3%;
+	border-radius: 50%;
+	background: radial-gradient(#4ec845, #ffffff);
+	filter: blur(6px);
+}
+.oval2 {
+	position: absolute;
+	width: 4.2%;
+	height: 3%;
+	border-radius: 50%;
+	background: radial-gradient(#000000, #ffffff);
+	filter: blur(6px);
+}
+
+@-webkit-keyframes complex {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
+.complex {
+	animation-name: complex;
+	animation-duration: 7s;
+	opacity: 80%;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
